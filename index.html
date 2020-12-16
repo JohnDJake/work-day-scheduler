@@ -18,10 +18,13 @@
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
+    <!-- JavaScript will add the current date to this p tag -->
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container mb-5">
     <!-- Timeblocks go here -->
+    <!-- Each text area has an id that will be referred to using the data-ref attribute in the link and
+      a data-time attribute that will be used to determine which formatting class to apply -->
     <div class="row">
       <div class="col-1 hour">9AM</div>
       <textarea id="text9AM" class="col description" data-time="9"></textarea>
@@ -67,7 +70,6 @@
       <textarea id="text5PM" class="col description" data-time="17"></textarea>
       <a href="#" class="col-1 saveBtn" data-ref="text5PM"><i class="fas fa-save"></i></a>
     </div>
-    
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
